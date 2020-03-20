@@ -41,7 +41,7 @@ export const smurfReducer = (state = initiialState, action) => {
 };
 
 
-export const  addSmurfState = {
+export const addSmurfState = {
   isLoading: false,
   error: ''
 }
