@@ -1,6 +1,6 @@
 import { 
   FETCH_DATA, FETCH_DATA_SUCCESS, FETCH_DATA_FAILURE, 
-  POST_DATA, POST_DATA_SUCCESS, POST_DATA_FAILURE, DELETE_DATA, 
+  POST_DATA, POST_DATA_SUCCESS, POST_DATA_FAILURE
   } from '../actions/index';
 
 export const initiialState = {
@@ -33,11 +33,7 @@ export const smurfReducer = (state = initiialState, action) => {
               ...state,
               data: action.payload.data
           }
-      case DELETE_DATA:
-          return {
-              ...state,
-              isLoading: !state.isLoading
-          }
+      
       default:
           return state;
   }
