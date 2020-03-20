@@ -7,7 +7,6 @@ export const POST_DATA = 'POST_DATA';
 export const POST_DATA_SUCCESS = 'POST_DATA_SUCCESS';
 export const POST_DATA_FAILURE = 'POST_DATA_FAILURE';
 
-
 export const fetchSmurfData = () => {
     return dispatch => {
         dispatch({ type: FETCH_DATA});
@@ -43,4 +42,3 @@ export const addNewSmurf = smurf => {
         });
     }
 }
-
